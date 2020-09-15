@@ -7,17 +7,17 @@
 
 ## For Linux
     - Open terminal
-    - Copy and paste it  > git clone https://github.com/pvcodes/vscode-cpp-snippets.git
-    - Then, > cp -r cpp.json $HOME/.config/Code/User/snippets
+    - Copy and paste it  `$ git clone https://github.com/pvcodes/vscode-cpp-snippets.git`
+    - Then, `$ cp -r cpp.json $HOME/.config/Code/User/snippets`
 
 ## For MacOS
     - Open terminal
-    - Copy and paste it  > git clone https://github.com/pvcodes/vscode-cpp-snippets.git
-    - Then, > cp -r cpp.json $HOME/Library/Application Support/Code/User/snippets
+    - Copy and paste it  `$ git clone https://github.com/pvcodes/vscode-cpp-snippets.git`
+    - Then, `$ cp -r cpp.json $HOME/Library/Application Support/Code/User/snippets`
 
 
 # DESCRIPTION
-    ** 
-    * All the starts with '!' for having the consistency
-    * For example ```!cpp``` for CPP *BIOLERPLATE*
-    **
+ 
+    - All the starts with `!` for having the consistency
+    - For example `!cpp` for CPP *BIOLERPLATE*
+    
