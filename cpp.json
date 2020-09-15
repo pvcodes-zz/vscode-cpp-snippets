@@ -1,0 +1,23 @@
+{
+	"c++ Biolerplate": {
+		"prefix": "!cpp",
+		"body": [
+			"#include <iostream>\n",
+			"int main()\t{",
+			"\t${0}",
+			"\treturn 0;",
+			"}",
+		],
+		"description": "C++ Boilder plate"
+	},
+	"cout": {
+		"prefix": "!cout",
+		"body": "std::cout << ${0:statement} << std::endl;",
+		"description": "Make the cout statement"
+	},
+	"cin": {
+		"prefix": "!cin",
+		"body": "std::cin >> ${0:var_name};",
+		"description": "Make the cin statement"
+	},
+}
