@@ -20,4 +20,3 @@
  
     - All the starts with `!` for having the consistency
     - For example `!cpp` for CPP *BIOLERPLATE*
-    
