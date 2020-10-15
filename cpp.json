@@ -45,7 +45,7 @@
   "forloop": {
     "prefix": "!for",
     "body": [
-      "for(int ${1:i}; ${1:i}<${2:Value}; ${1:i}++) {",
+      "for (int ${1:i} = 0; ${1:i} < ${2:value}; ${1:i}++) {",
       "\t${0://Your Code}",
       "}"
     ]
@@ -65,6 +65,36 @@
       "#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
       "\t${0: //Code}",
       "#endif //${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H"
+    ]
+  },
+  "puts": {
+    "prefix": "!puts",
+    "body": "puts(\"${1://Code}\");${0}"
+  },
+  "arraysize": {
+    "prefix": "!arraysize",
+    "body": "int l = sizeof(${1:var_name})/sizeof(${1:var_name}[0]);${0}"
+  },
+  "arraymax": {
+    "prefix": "!arraymax",
+    "body": [
+      "int max(int A[], int l) {",
+      "\tint max = A[0];",
+      "\tfor (int i = 1; i < l; i++) ",
+      "\t\tif (max < A[i]) max = A[i];",
+      "\treturn max;",
+      "}"
+    ]
+  },
+  "arraymin": {
+    "prefix": "!arraymin",
+    "body": [
+      "int min(int A[], int l) {",
+      "\tint min = A[0];",
+      "\tfor (int i = 1; i < l; i++) ",
+      "\t\tif (min > A[i]) min = A[i];",
+      "\treturn min;",
+      "}"
     ]
   }
 }
